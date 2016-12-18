@@ -1,0 +1,256 @@
+<html>
+<head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+         <title>Parallax Content Slider with CSS3 and jQuery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Parallax Content Slider with CSS3 and jQuery" />
+        <meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/nojs.css" />
+		</noscript>
+    </head>
+		<body>
+<div class="drop">
+<ul class="top-level">
+  <li><a href="javascript:;">Басты бет</a></li>
+  <li><a href="javascript:;">Қала</a>
+    <!-- dropdown menu first level -->
+    <ul class="second-level">
+      <li><a href="javascript:;">Қала тарихы</a></li>
+      <li><a href="javascript:;">Қала әкімшілігі</a>
+	  <li><a href="javascript:;">Қала жайлы</a>
+	  <ul class="third-level">
+          <li><a href="javascript:;">Білім ордалары</a></li>
+          <li><a href="javascript:;">Денсаулық</a> </li>
+		  <li><a href="javascript:;">Жол транспорты</a></li>
+		</ul></li>
+	  
+	  <li><a href="javascript:;">Мәдениет</a>
+	  <ul class="third-level">
+          <li><a href="javascript:;">Театорлар</a></li>
+		  <li><a href="javascript:;">Кинотеаторлар</a></li>
+		  </ul></li>
+
+	  <li><a href="javascript:;">Спорт және туризм</a>
+	  <ul class="third-level">
+          <li><a href="javascript:;">Universiada 2017</a></li>
+		  <li><a href="javascript:;">Туризм</a></li>
+		 </ul></li>
+	  <li><a href="javascript:;">Күнтүзбе</a>
+	  <li><a href="javascript:;">Карта</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="javascript:;">Кері байланыс</a></li>
+<li>
+  <form class="search">
+  <p><input type="search" name="q" placeholder="Поиск по сайту" class="input"> 
+   <input type="submit" value="Найти" class="submit"></p>
+  </form>
+  </li>
+  <li>
+  <div class="social">
+  <a href="https://vk.com/feed" title="Вк топ" target="_blank">
+    <img src="images/vk.png" alt="Вк" title="Вк">
+	</a> 
+	<a href="https://www.instagram.com/" title="Instagram парақшасы" target="_blank">
+    <img src="images/Insta.png" alt="Instagram" title="Instagram">
+	</a> 
+	<a href="https://twitter.com" title="twitter парақшасы" target="_blank">
+    <img src="images/twitter.png" alt="twitter" title="twitter">
+	</a> 
+	<a href="https://mail.google.com/mail/u/0/?tab=wm#inbox" title="Google mail" target="_blank">
+    <img src="images/google.png" alt="Google mail" title="Google mail">
+	</a>
+</ul>
+    <div class="container">	
+			<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<h2>Алматы тарихы</h2>
+					<p>Біздің парақшада сіз Алматының құрылу тарихы мен бұрын соңды көрмеген ретро суреттері мен бейнебаяндарын көре аласыздар.</p>
+					<a href="#" class="da-link">Толықрақ оқу</a>
+					<div class="da-img"><img src="images/h4.jpg"alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>Мәдениет</h2>
+					<p>Қаламыздың көркем жерлері.Театорлар мен кинотеаторлардың көріністері мен болу сеанстарын көре аласыздар. </p>
+					<a href="#" class="da-link">Толықрақ оқу</a>
+					<div class="da-img"><img src="images/t.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>Білім және денсаулық</h2>
+					<p>Қала білім ордалары мен денсаулық орталықтары жайлы толық ақпарат.</p>
+					<a href="#" class="da-link">Толықрақ оқу</a>
+					<div class="da-img"><img src="images/b.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>Universiada 2017</h2>
+					<p>2017 жылғы қысқы Universiada-ға жанкүйер болыңыз!!! </p>
+					<a href="#" class="da-link">Толықрақ оқу</a>
+					<div class="da-img"><img src="images/u2.jpg" alt="image01" /></div>
+				</div>
+				
+			</div>
+        </div>
+		
+		<div id="wrapper">
+		
+		
+		</div>
+		<div class="block">
+					<ul class="blocks-thumbs">
+						<li>
+							<a href="project.html" class="thumb" title="An image"><img src="images/u2.jpg" alt="Post" /></a>
+							<div class="excerpt">
+								<a href="project.html" class="header">dgbgfbgfbfgb</a>
+								<a href="project.html" class="text">Elaman Beks</a>
+								<div class="meta"> 23 Jun, 2010</div>
+							</div>
+						</li>
+						<li>
+							<a href="project.html" class="thumb" title="An image"><img src="images/u2.jpg" alt="Post" /></a>
+							<div class="excerpt">
+								<a href="project.html" class="header">fdafdbmbjaoiove</a>
+								<a href="project.html" class="text">dscsdmjfnajvlnfjnfnoENVLNDSJNVnjdnwdovnNRIOMVONDIOVNREONBJNOBMBONOMBOSNonrgnoetnonmnre.</a>
+								<div class="meta">Admin on 23 Jun, 2010</div>
+							</div>
+						</li>
+						<li>
+							<a href="project.html" class="thumb" title="An image"><img src="images/u2.jpg" alt="Post" /></a>
+							<div class="excerpt">
+								<a href="project.html" class="header">bdsbsfdvsdf</a>
+								<a href="project.html" class="text">kmdsnnafjnvjnfadsmmcrmoijivvfkkkkkkkvmirma;ppooprmgiorrvtbyopppppdfkpgjiemvamaqmklmvkmmpprvcs</a>
+								<div class="meta">Admin on 23 Jun, 2010</div>
+							</div>
+						</li>
+						<li>
+							<a href="project.html" class="thumb" title="An image"><img src="images/u2.jpg" alt="Post" /></a>
+							<div class="excerpt">
+								<a href="project.html" class="header">cdscdsvkfdjnvjndfjnj</a>
+								<a href="project.html" class="text">ssfrmmvrmkmklmmaakpokkrmma;nonfncfscnqnepinondlvnntansldnvoimonjvnunrnrNOWNNONROINVJNRVNJNBwrngofngnenon.</a>
+								<div class="meta">Admin on 23 Jun, 2010</div>
+							</div>
+						</li>
+						<li>
+							<a href="project.html" class="thumb" title="An image"><img src="images/u2.jpg" alt="Post" /></a>
+							<div class="excerpt">
+								<a href="project.html" class="header">LAfmvjsajnvjfnvjns</a>
+								<a href="project.html" class="text">llkvfanjnrevnontoinbontronoienrnwpnrpnpngbnndmmpdmfmbgnjbnsjngbjnsbnjnsgjdnalnoinrniubyunbafdnvnntubnuinonusnoanognuitns</a>
+								<div class="meta">Admin on 23 Jun, 2010</div>
+							</div>
+						</li>
+						<li>
+							<a href="project.html" class="thumb" title="An image"><img src="images/u2.jpg" alt="Post" /></a>
+							<div class="excerpt">
+								<a href="project.html" class="header">fvffdvfvfgbsgf</a>
+								<a href="project.html" class="text">dcsmcrnuibanerknvopenfbrgnanrafdmvfdirmibjfndsjuntnanfvneirknaornoqrinjn;vdfnvdniunoeanonngtnndabn;onjttnitrsn.</a>
+								<div class="meta">Admin on 23 Jun, 2010</div>
+							</div>
+						</li>
+					</ul>
+	
+		</div>
+		<footer>
+		<div id="footer">
+			<!-- wrapper-footer -->
+			<div class="wrapper">
+			
+				
+				<!-- title -->
+				<div class="title">
+					<span class="big">Hire me!</span> <span class="small"> I am available for freelance</span>
+					<div  class="to-top poshytip" title="To top">to top</div>
+				</div>
+				<!-- Ends title -->
+				
+				<!-- left col -->
+				<div class="footer-left">
+					<h6 class="p-title">Some history</h6>
+					<p>Once upon a time pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+					<p>Et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris eleifend leo. <a href="#">Learn more</a></p>
+					
+				</div>
+				<!-- ENDS left col -->
+				
+				<!-- right col -->
+				<div class="footer-right">
+					<h6 class="p-title">Contact me</h6>
+					<p>Want to hire me or just say hello? Use the form below to get in touch. Dont be shy!</p>
+
+					<!-- form -->
+					<script type="text/javascript" src="js/form-validation.js"></script>
+					<form id="contactForm" action="#" method="post">
+						<fieldset>
+							<div>
+								<input name="name"  id="name" type="text" class="form-poshytip" title="Whats your name?" value="Name" onfocus="defaultInput(this,'Name')" onblur="clearInput(this,'Name')" />
+							</div>
+							<div>
+								<input name="email"  id="email" type="text" class="form-poshytip" title="Enter a valid email address" value="Email" onfocus="defaultInput(this,'Email')" onblur="clearInput(this,'Email')"  />
+							</div>
+							<div>
+								<textarea  name="comments"  id="comments" rows="5" cols="20" class="form-poshytip" title="How can i help you?" onfocus="defaultInput(this,'How can i help you?')" onblur="clearInput(this,'How can i help you?')" >How can i help you?</textarea>
+							</div>
+							
+							<!-- send mail configuration -->
+							<input type="hidden" value="" name="to" id="to" />
+							<input type="hidden" value="" name="from" id="from" />
+							<input type="hidden" value="From contact form" name="subject" id="subject" />
+							<input type="hidden" value="send-mail.php" name="sendMailUrl" id="sendMailUrl" />
+							<!-- ENDS send mail configuration -->
+							
+							<p><input type="button" value="Send" name="submit" id="submit" /></p>
+						</fieldset>
+					</form>
+					<p id="success" class="success">Thanks for your comments.</p>
+					<!-- ENDS form -->
+				</div>
+				<div class="clear"></div>
+				<!-- ENDS right col -->
+					
+				
+			</div>
+			<!-- ENDS wrapper-footer -->
+		</div>
+		<!-- ENDS FOOTER -->
+		
+	
+		<!-- Bottom -->
+		<div id="bottom">
+			<!-- wrapper-bottom -->
+			<div class="wrapper">
+				<div id="bottom-text"><a href="" >Caja Template</a> is a FREE file by <a href=""> luiszuno</a> </div>
+				<div  class="to-top poshytip" title="To top">to top</div>
+			</div>
+			<!-- ENDS wrapper-bottom -->
+		</div>
+		<!-- ENDS Bottom -->
+	
+		</footer>
+		
+		
+		
+		
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				$('#da-slider').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+			
+			});
+		</script>
+</body>
+</html>

@@ -1,0 +1,470 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-size:14px;
+	color:#666;
+	background:url('img/bg.jpg') #f2f2f2;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.drop ul {
+  font: 14px/14px Helvetica,Arial,sans-serif;
+  background:Dimgray ;
+  box-shadow: 0 3px 3px rgba(0,0,0,.5);
+  
+}
+.drop  li {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+}
+.drop  li img{
+	position:relative;
+	display:inline-block;
+}
+.drop li a {
+  display: block;
+  padding: 8px 18px;
+  color: AliceBlue;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.drop  li a:hover {
+  color:AliceBlue;
+  background:LightSlateGray;
+}
+.top-level {
+  border-bottom: 1px solid AliceBlue;
+}
+.second-level,
+.third-level {
+  width:150px;
+  border: 1px solid LightCyan;
+  border-radius:4px;
+}
+.top-level li:hover .second-level {
+  left: 0;
+}
+.second-level:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 25px;
+  border-bottom: 8px solid LightGrey;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+ .second-level {
+  position: absolute;
+  top: 100%;
+  left:-9999px;
+  padding:0;
+  z-index:9999;
+  
+}
+.second-level li {
+  position: relative;
+  display: block;
+ 
+ 
+}
+.second-level li a {
+  margin:0;
+  
+}
+
+/*second level*/
+.second-level li:hover .third-level {
+  left: 100%;
+  
+  
+}
+.p{
+		width:1000px;
+	}
+	.text{
+	display:block;
+	width:1080px;
+	padding-left:100px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:18px;
+	 line-height: 1.8;
+}
+.third-level:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -8px;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-right: 8px solid DarkGrey;
+}
+.third-level {
+  position: absolute;
+  left: -9999em;
+  top: 0;
+  padding:0;
+}
+.search{
+	position:relative;
+	right:-600px;
+}
+#submit{
+	position:relative;
+	
+}
+.input{
+	color:Gray;
+	background:LightGray;
+	font-size:15px;
+	border-radius:5px;
+	border-bottom: 3px  solid LightGray;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 0;
+	height:22px;
+}
+.submit{
+	color:Gray;
+	background:LightGray;
+	font-size:15px;
+	border-radius:5px;
+	border-bottom:3px solid LightGray;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border:0;
+	height:22px;
+	width:52px;
+	
+}
+.social{
+	right:-65px;
+}
+.social img{
+position:relative;
+width:20px;
+height:20px;
+display:inline-block;
+margin:-3px;
+}
+
+
+
+.comment,
+#addCommentContainer{
+	
+	/* Стиль для комментариев  */
+	
+	padding:12px;
+	width:250px;
+	position:relative;
+	
+	background-color:#fcfcfc;
+	border:1px solid white;
+	color:#888;
+	margin-bottom:25px;
+	
+	/* Скругленные углы и тени CSS3 */
+	
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+
+	-moz-box-shadow:2px 2px 0 #c2c2c2;
+	-webkit-box-shadow:2px 2px 0 #c2c2c2;
+	box-shadow:2px 2px 0 #c2c2c2;
+}
+
+.comment .avatar{
+
+	/*
+	/	Аватар позиционируется абсолютно. 
+	/	Внешнее смещение для div комментария
+	/*/
+
+	height:40px;
+	left:-60px;
+	position:absolute;
+	width:40px;
+	background:url('img/default_avatar.gif') no-repeat #fcfcfc;
+	
+	/* Центрируем вертикально: */
+	
+	margin-top:-30px;
+	top:50%;
+
+	-moz-box-shadow:1px 1px 0 #c2c2c2;
+	-webkit-box-shadow:1px 1px 0 #c2c2c2;
+	box-shadow:1px 1px 0 #c2c2c2;
+}
+
+.comment .avatar img{
+	display:block;
+	
+}
+
+.comment .name{
+	font-size:15px;
+	padding-bottom:10px;
+	color:#ccc;
+}
+
+.comment .date{
+	font-size:10px;
+	padding:6px 0;
+	position:absolute;
+	right:15px;
+	top:10px;
+	color:#bbb;
+}
+
+.comment p,
+#addCommentContainer p{
+	font-size:14px;
+	line-height:1.5;
+	overflow-x:hidden;
+}
+
+#addCommentContainer input[type=text],
+#addCommentContainer textarea{
+
+	/* Стиль для ввода */
+
+	display:block;
+	border:1px solid #ccc;
+	margin:5px 0 5px;
+	padding:3px;
+	font-size:14px;
+	color:#555;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#addCommentContainer textarea{
+	width:240px;
+}
+
+label{
+	font-size:13px;
+}
+
+label span.error{
+	color:red;
+	position:relative;
+	right:-10px;
+}
+
+#submit{
+	
+	/* Кнопка "Отправить" */
+	
+	background-color:#58B9EB;
+	border:1px solid #40A2D4;
+	color:#FFFFFF;
+	cursor:pointer;
+	font-family:'Myriad Pro',Arial,Helvetica,sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:4px;
+	margin-top:5px;
+
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+#submit:hover{
+	background-color:#80cdf5;
+	border-color:#52b1e2;
+}
+
+/* Ниже приведенные стили нужны только для демонстрационной страницы: */
+
+#main{
+	position:relative;
+	margin-top:50px;
+	padding-left:90px;
+	
+}
+
+h1{
+	color:#7E94A2;
+	font-size:30px;
+	margin:50px 0 20px;
+}
+
+h2{
+	font-size:18px;
+	margin-bottom:50px;
+}
+
+h1,h2{
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+	text-align:center;
+	font-weight:normal;
+	text-shadow:0 1px 1px #FFFFFF;
+}
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+a img{
+	border:none;
+}
+
+
+#footer{
+	color: #d9e2ef;
+	padding-top:5px;
+	background:DarkGray ;
+	margin-top:50px;
+}
+
+#footer a{
+	color: tan;
+	text-decoration: none;
+}
+
+#footer a:hover{
+	color:AliceBlue;
+	background: DarkGray;
+}
+
+#footer .wrapper{
+	background:DimGray;
+	width:100%;
+}
+
+.footer-left {
+	float:left;
+	width: 440px;
+	margin-right:130px;
+	margin-left: 50px;
+	margin-top:35px;
+}
+
+.footer-right {
+	float:left;
+	width: 300px;
+	margin-left:100px;
+	margin-top:35px;
+}
+
+#footer .title{
+	position: relative;
+	overflow: hidden ;
+	color: AliceBlue;
+	margin-bottom: 30px;
+	margin-left: 10px;
+}
+
+
+#footer .title span.big{
+	display: block;
+	float: left;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 48px;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+	line-height: 50px;
+}
+
+#footer .title span.small{
+	display: block;
+	float: left;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	margin-left: 20px;
+	margin-top: 27px;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* BOTTOM --------------------------------------------------------*/
+
+#bottom{
+	position: relative;
+	width: 100%;
+	font-size: 12px;
+	line-height: 60px;
+	color: AliceBlue;
+	margin-top:-15px;
+	background:darkslategray;
+}
+
+#bottom #bottom-text{
+	width: 600px;
+	overflow: hidden;
+	margin-left:-380px;	
+}
+.clear{
+	clear:both;
+	height:1px;
+}
+
+#contactForm input,
+#contactForm textarea,
+#commentform input,
+#commentform textarea{
+	padding: 10px 15px;
+	background: LightGray;
+	color:DarkSlateGray;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-left: none;
+	border-right: none;
+	border-top: 1px  solid LightGray;
+	border-bottom: 1px  solid LightGray;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	overflow: auto;
+}
+
+#contactForm input,
+#commentform input{
+	width: 282px;
+	margin-bottom: 20px;
+}
+
+#contactForm #submit,
+#commentform #submit{
+	width: 76px;
+	margin: 21px 0px;
+	padding: 5px 0px;
+	background: LightGray;
+	float: right;
+	color: DarkSlateGray;
+}
+
+#contactForm #submit:hover,
+#commentform input#submit:hover{
+	opacity: 0.6;
+}
+
+#commentform label{
+	font-size: 14px;
+}
+
+#commentform #submit{ float: left; }
+.wrapper{
+	width:500px;
+	margin: 0px auto;
+	position: relative;
+	background:darkslategray;
+	padding-top:100px;
+}
+
+.wrapper p{
+	margin-bottom:5px;
+}

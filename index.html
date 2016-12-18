@@ -1,0 +1,353 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Галерея изображений на jQuery | XoZblog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" href="css/styles.css" rel="stylesheet" media="all" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	    <script src="js/jquery.quicksand.js" type="text/javascript"></script>
+        <script src="js/jquery.easing.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+       	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script> 
+        <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+
+        
+        
+ 
+</head>
+
+<body>
+<div class="drop">
+<ul class="top-level">
+  <li><a href="javascript:;">Басты бет</a></li>
+  <li><a href="javascript:;">Қала</a>
+    <!-- dropdown menu first level -->
+    <ul class="second-level">
+      <li><a href="javascript:;">Қала тарихы</a></li>
+      <li><a href="javascript:;">Қала әкімшілігі</a>
+	  <li><a href="javascript:;">Қала жайлы</a>
+	  <ul class="third-level">
+          <li><a href="javascript:;">Білім ордалары</a></li>
+          <li><a href="javascript:;">Денсаулық</a> </li>
+		  <li><a href="javascript:;">Жол транспорты</a></li>
+		</ul></li>
+	  
+	  <li><a href="javascript:;">Мәдениет</a>
+	  <ul class="third-level">
+          <li><a href="javascript:;">Театорлар</a></li>
+		  <li><a href="javascript:;">Кинотеаторлар</a></li>
+		  </ul></li>
+
+	  <li><a href="javascript:;">Спорт және туризм</a>
+	  <ul class="third-level">
+          <li><a href="javascript:;">Universiada 2017</a></li>
+		  <li><a href="javascript:;">Туризм</a></li>
+		 </ul></li>
+	  <li><a href="javascript:;">Күнтүзбе</a>
+	  <li><a href="javascript:;">Карта</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="javascript:;">Кері байланыс</a></li>
+<li>
+  <form class="search">
+  <p><input type="search" name="q" placeholder="Поиск по сайту" class="input"> 
+   <input type="submit" value="Найти" class="submit"></p>
+  </form>
+  </li>
+  
+  <li id="roud">
+  
+  <li class="social"><a href="https://vk.com/feed" title="Вк топ" target="_blank">
+    <img src="images/vk.png" alt="Вк" title="Вк">
+	</a></li> 
+	<li class="social"><a href="https://www.instagram.com/" title="Instagram парақшасы" target="_blank">
+    <img src="images/Insta.png" alt="Instagram" title="Instagram">
+	</a></li> 
+	<li class="social"><a href="https://twitter.com" title="twitter парақшасы" target="_blank">
+    <img src="images/twitter.png" alt="twitter" title="twitter">
+	</a></li> 
+	<li class="social"><a href="https://mail.google.com/mail/u/0/?tab=wm#inbox" title="Google mail" target="_blank">
+    <img src="images/google.png" alt="Google mail" title="Google mail">
+	</a></li>
+	
+ </li>
+ </ul>
+</div>
+<div class="wrappere">
+   	<div class="portfolio-content">	
+    <h1 class="title-page">Галерея изображений на jQuery</h1>
+               
+	  <ul class="portfolio-categ filter">
+        <li>Категории:</li>
+        <li class="all active"><a href="#">Все</a></li>
+        <li class="cat-item-1"><a href="#" title="Category 1">Категория 1</a></li>
+	    <li class="cat-item-2"><a href="#" title="Category 2">Категория 2</a></li>
+	    <li class="cat-item-3"><a href="#" title="Category 3">Категория 3</a></li>
+	    <li class="cat-item-4"><a href="#" title="Category 4">Категория 4</a></li>
+      </ul>
+        
+       
+			        <ul class="portfolio-area">	
+ 		
+               		<li class="portfolio-item2" data-id="id-0" data-type="cat-item-4">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic1.jpg" rel="prettyPhoto[gallery]" title="Wall-E"><img width="225" height="140" src="images/thumbs/p1.jpg" alt="Wall-E" title="Wall-E" />                    
+                    </a>
+                    </span>
+                    <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Wall-E">Wall-E</a></h2>
+                    <p class="post-subtitle-portfolio">опубликовано: 2008</p>
+					</div>
+                    
+					</div>	
+                    </li>			
+				            
+			                        		
+               		<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic2.jpg" rel="prettyPhoto[gallery]" title="Up"><img width="225" height="140" src="images/thumbs/p2.jpg" alt="Up" title="Up" />                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Up">Up</a></h2>
+                    <p class="post-subtitle-portfolio">опубликовано: 2009</p>
+					</div>
+                    
+					</div>	
+                    </li>				
+				 
+                        		
+               			<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic3.jpg" rel="prettyPhoto[gallery]" title="Cars 2"><img width="225" height="140" src="images/thumbs/p3.jpg" alt="Cars 2" title="Cars 2" />                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Cars 2">Cars 2</a></h2>
+                    <p class="post-subtitle-portfolio">опубликовано: 2011</p>
+					</div>
+                    
+					</div>	
+                    </li>		
+				            
+			                             		
+               			<li class="portfolio-item2" data-id="id-3" data-type="cat-item-4">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic4.jpg" rel="prettyPhoto[gallery]" title="Toy Story 3"><img width="225" height="140" src="images/thumbs/p4.jpg" alt="Toy Story 3" title="Toy Story 3" />                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Toy Story 3">Toy Story 3</a></h2>
+                    <p class="post-subtitle-portfolio">опубликовано: 2010</p>
+					</div>
+                    
+					</div>	
+                    </li>			
+				            
+			                            		
+               		<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic5.jpg" rel="prettyPhoto[gallery]" title="Finding Nemo"><img width="225" height="140" src="images/thumbs/p5.jpg" alt="Finding Nemo" title="Finding Nemo" />                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Finding Nemo">Finding Nemo</a></h2>
+                    <p class="post-subtitle-portfolio">опубликовано: 2003</p>
+					</div>
+                    
+					</div>	
+                    </li>			
+				            
+			     		              		
+               		<li class="portfolio-item2" data-id="id-5" data-type="cat-item-2">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic6.jpg" rel="prettyPhoto[gallery]" title="Lorax"><img width="225" height="140" src="images/thumbs/p6.jpg" alt="Lorax" title="Lorax" />                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Lorax">Lorax</a></h2>
+                    <p class="post-subtitle-portfolio">опубликовано: 2012</p>
+					</div>
+                    
+					</div>	
+                    </li>			
+				            
+			     	             	
+               		<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic7.jpg" rel="prettyPhoto[gallery]" title="Happy Feet 2"><img width="225" height="140" src="images/thumbs/p7.jpg" alt="Happy Feet 2" title="Happy Feet 2" />                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Happy Feet 2">Happy Feet 2</a></h2>
+                    <p class="post-subtitle-portfolio">опубликовано: 2011</p>
+					</div>
+                    
+					</div>	
+                    </li>	
+		                
+            		
+                    <li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic8.jpg" rel="prettyPhoto[gallery]" title="Tangled"><img width="225" height="140" src="images/thumbs/p8.jpg" alt="Tangled" title="Tangled" />                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Tangled">Tangled</a></h2>
+                    <p class="post-subtitle-portfolio">опубликовано: 2010</p>
+					</div>
+                    
+					</div>	
+                    </li>			
+				            
+			     
+		            <li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic9.jpg" rel="prettyPhoto[gallery]" title="Kung Fu Panda 2"><img width="225" height="140" src="images/thumbs/p9.jpg" alt="Kung Fu Panda 2" title="Kung Fu Panda 2" />                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Kung Fu Panda 2">Kung Fu Panda 2</a></h2>
+                    <p class="post-subtitle-portfolio">опубликовано: 2011</p>
+					</div>
+                    
+					</div>	
+                    </li>			
+				            
+			     
+		                
+            		 <li class="portfolio-item2" data-id="id-9" data-type="cat-item-2">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic10.jpg" rel="prettyPhoto[gallery]" title="Madagascar 3"><img width="225" height="140" src="images/thumbs/p10.jpg" alt="Madagascar 3" title="Madagascar 3" />                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Madagascar 3">Madagascar 3</a></h2>
+                    <p class="post-subtitle-portfolio">опубликовано: 2012</p>
+					</div>
+                    
+					</div>	
+                    </li>			            
+			     
+		                
+            		 <li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic11.jpg" rel="prettyPhoto[gallery]" title="Rango"><img width="225" height="140" src="images/thumbs/p11.jpg" alt="Rango" title="Rango" />                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Rango">Rango</a></h2>
+                    <p class="post-subtitle-portfolio">опубликовано: 2011</p>
+					</div>
+                    
+					</div>	
+                    </li>	
+				            
+			     
+		            <li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic12.jpg" rel="prettyPhoto[gallery]" title="Shrek Forever After"><img width="225" height="140" src="images/thumbs/p12.jpg" alt="Shrek Forever After" title="Shrek Forever After" />                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Shrek Forever After">Shrek Forever After</a></h2>
+                    <p class="post-subtitle-portfolio">опубликовано: 2010</p>
+					</div>
+                    
+					</div>	
+                    </li>
+
+            
+                        <div class="column-clear"></div>
+            		</ul><!--end portfolio-area -->
+		</div><!--end portfolio-content -->
+        
+ 	
+</div><!-- end wrapper -->  
+
+
+		<div id="footer">
+			<!-- wrapper-footer -->
+			<div class="wrapper">
+			
+				
+			
+				
+				<!-- left col -->
+				<div class="footer-left">
+					<h6 class="p-title">Soffvfvfs</h6>
+					<p>gkkbmkgmbglmbkmzfkinnoevirlkvrivdimrkrmorppfjdjvouufvnujknu</p>
+					<p>fdtggtnjgjneramrfkmkkmrkcl.mdkslcmrjaehgaenlbladfbgagsmjhfgbjm <a href="#">Толықрақ оқу</a></p>
+					
+				</div>
+				
+				<!--  left бітті -->
+				
+				<!-- right басы -->
+				<div class="footer-right">
+					<h6 class="p-title">Сайтқа Тіркеліңіз.</h6>
+					<p>Сайтқа тіркелу үшін астыдағы анкетаны толтырыңыз.</p>
+
+					<!-- form -->
+					<script type="text/javascript" src="js/form-validation.js"></script>
+					<form id="contactForm" action="#" method="post">
+						<fieldset>
+							<div>
+								<input name="name"  id="name" type="text" class="form-poshytip" title="Атыңыз кім?" value="Атыңыз кім?" onfocus="defaultInput(this,'Name')" onblur="clearInput(this,'Name')" />
+							</div>
+							<div>
+								<input name="email"  id="email" type="text" class="form-poshytip" title="Email адресіңізді жазыңыз. " value="Email адресіңізді жазыңыз." onfocus="defaultInput(this,'Email')" onblur="clearInput(this,'Email')"  />
+							</div>
+						
+							
+							
+							<input type="hidden" value="" name="to" id="to" />
+							<input type="hidden" value="" name="from" id="from" />
+							<input type="hidden" value="From contact form" name="subject" id="subject" />
+							<input type="hidden" value="send-mail.php" name="sendMailUrl" id="sendMailUrl" />
+							
+							<p><input type="button" value="Жіберу" name="submit" id="submit" /></p>
+						</fieldset>
+					</form>
+					
+					<!--  form -->
+				</div>
+				
+				<div class="clear"></div>
+				<!--  right  -->
+					
+				
+			</div>
+			<!--  wrapper-footer -->
+		</div>
+		
+		<!-- FOOTER -->
+		
+	
+		<!-- Bottom -->
+		<div id="bottom">
+			<!-- wrapper-bottom -->
+			<div class="wrapper">
+				<div id="bottom-text">Барлық құқұқ сақталған &copy; <? php echo date('Y')?>
+				</div>
+			</div>
+			<!--  wrapper-bottom -->
+		</div>
+</footer>
+
+</body>
+</html>
